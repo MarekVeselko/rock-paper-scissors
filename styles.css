@@ -223,3 +223,139 @@ body{
 #x-button:focus{
   outline: none;
 }
+.change-btn{
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left:5%;
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 7px solid #000;
+    transition: all .5s;
+}
+.change-btn p{
+    position: absolute;
+    left: 25%;
+    top:40%;
+    width: 250%;
+    color:#000;
+    visibility: hidden;
+    font-size: 1.3rem;
+    font-family: 'Anton', sans-serif;
+}
+
+.change-btn:hover{
+    padding-right: 23rem;
+    border-radius: 250px;
+}
+.change-btn:hover p{
+    visibility: visible;
+}
+
+@media only screen and (max-width: 1200px){
+    .selections{
+        width: 40%;
+    }
+    .results{
+        width: 100%;
+    }
+    .change-btn{
+        display: none;
+        }
+}
+
+@media only screen and (max-width: 900px){
+    .selections{
+        width: 50%;
+    }
+    #play-again-box{
+        top: 70%;   
+    }
+   
+}
+
+@media only screen and (max-width: 700px){
+    .selections{
+        width: 60%;
+    }
+    .scoreboard{
+        width: 90%;
+
+    }
+
+}
+@media only screen and (max-width: 600px){
+    .selections{
+        width: 80%;
+        height: 30rem;
+    }
+    .selection{
+        width: 15rem;
+        height: 15rem;
+    }
+    .results{
+        margin-top: 7rem;
+    }
+    .result__selection{
+        border: 30px solid;
+        width: 20rem;
+        padding: 3rem;
+    }
+
+    #rules-box{
+        width: 90%;
+    }
+
+    #rules-box img{
+        width: 15rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .selections{
+        width: 100%;
+    }
+    .scoreboard img{
+        display: none;
+    }
+    .scoreboard{
+        justify-content: center;
+    }
+    .result__selection{
+        border: 20px solid;
+        width: 15rem;
+        padding: 2rem;
+    }
+    #play-again-box{
+        top: 60%;   
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .selections{
+        height: 25rem;
+    }
+    .selection{
+        width: 12rem;
+        height: 12rem;
+    }
+    #play-again-box h1{
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+    }
+    
+    #play-again-box button{
+        font-size: 1rem;
+        padding: 1rem 5rem;
+    }
+    .result__selection{
+        border: 17px solid;
+        width: 10rem;
+        padding: 1.5rem;
+    }
+}
